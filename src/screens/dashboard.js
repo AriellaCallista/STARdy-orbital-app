@@ -10,7 +10,7 @@ import DashButtons from '../components/dashButtons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 
-export default function Dashboard() {
+export default function Dashboard({ navigation }) {
 
 
 
@@ -22,7 +22,7 @@ export default function Dashboard() {
             <View style={{flex: 1}}>
                 <ProfileCard />
                 <Requests />
-                <DashButtons />
+                <DashButtons navigation={navigation} />
                 
             </View> 
         </SafeAreaView>

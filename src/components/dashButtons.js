@@ -1,12 +1,12 @@
 import React from 'react'
-import { View, Text, StyleSheet, TouchableHighlight, Alert, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, Alert, TouchableOpacity } from 'react-native'
 
 import { Entypo } from '@expo/vector-icons'
 
-export default function DashButtons() {
+export default function DashButtons({ navigation }) {
 
     const toDo = () => {
-        Alert.alert('To do')
+        navigation.navigate('To Do List')
     }
     
     const notes = () => {
